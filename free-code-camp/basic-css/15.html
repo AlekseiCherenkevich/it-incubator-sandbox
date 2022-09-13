@@ -1,5 +1,8 @@
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
+  #cat-photo-form {
+    background-color: green;
+  }
   .red-text {
     color: red;
   }
@@ -17,11 +20,15 @@
     border-color: green;
     border-width: 10px;
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 50%;
   }
 
   .smaller-image {
     width: 100px;
+  }
+
+  .silver-background {
+    background-color: silver;
   }
 </style>
 
@@ -31,7 +38,7 @@
 
   <a href="#"><img class="smaller-image thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
 
-  <div>
+  <div class="silver-background">
     <p>Things cats love:</p>
     <ul>
       <li>cat nip</li>
@@ -46,7 +53,7 @@
     </ol>
   </div>
 
-  <form action="https://freecatphotoapp.com/submit-cat-photo">
+  <form action="https://freecatphotoapp.com/submit-cat-photo" id="cat-photo-form">
     <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
     <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
     <label><input type="checkbox" name="personality" checked> Loving</label>
